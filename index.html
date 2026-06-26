@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablero Master &middot; Operaciones</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#0f172a; --card:#ffffff; --txt:#0f172a;
+    --muted:#64748b; --line:#e2e8f0;
+    --tnir:#2563eb; --fng:#0891b2; --cryo:#7c3aed; --recl:#16a34a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+       background:radial-gradient(1200px 600px at 50% -10%,#16243f 0%,var(--bg) 60%);
+       color:#e2e8f0;min-height:100vh}
+  header{padding:34px 20px 10px;text-align:center}
+  header h1{margin:0;font-size:30px;letter-spacing:.3px}
+  header p{margin:8px 0 0;color:#94a3b8;font-size:15px}
+  main{max-width:1080px;margin:0 auto;padding:24px 20px 60px}
+  .sect{margin-top:26px}
+  .sect h2{font-size:13px;text-transform:uppercase;letter-spacing:1.4px;color:#7c8aa3;
+           margin:0 0 12px;font-weight:700}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);color:var(--txt);border-radius:16px;padding:22px;
+        box-shadow:0 10px 30px rgba(0,0,0,.25);border-top:5px solid var(--line);
+        display:flex;flex-direction:column;gap:8px;transition:transform .12s ease,box-shadow .12s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+  .card .ico{font-size:30px}
+  .card h3{margin:2px 0 0;font-size:19px}
+  .card .desc{color:var(--muted);font-size:13.5px;line-height:1.45;min-height:38px}
+  .card .url{font-size:12px;color:#94a3b8;word-break:break-all}
+  .btn{margin-top:10px;display:inline-block;text-align:center;text-decoration:none;
+       background:#0f172a;color:#fff;padding:11px 14px;border-radius:10px;font-weight:600;
+       font-size:14px}
+  .btn:hover{opacity:.9}
+  .tnir{border-top-color:var(--tnir)} .tnir .btn{background:var(--tnir)}
+  .fng{border-top-color:var(--fng)} .fng .btn{background:var(--fng)}
+  .cryo{border-top-color:var(--cryo)} .cryo .btn{background:var(--cryo)}
+  .recl{border-top-color:var(--recl)} .recl .btn{background:var(--recl)}
+  footer{text-align:center;color:#64748b;font-size:12.5px;padding:10px 20px 40px}
+</style>
+</head>
+<body>
+  <header>
+    <h1>&#128202; Tablero Master &middot; Operaciones</h1>
+    <p>Accesos directos a todos los tableros. Da clic en el que necesites.</p>
+  </header>
+
+  <main>
+    <div class="sect">
+      <h2>Monitoreo de flota (Samsara)</h2>
+      <div class="grid">
+        <div class="card tnir">
+          <div class="ico">&#128666;</div>
+          <h3>TNIR</h3>
+          <div class="desc">Monitoreo de flota TNIR: km, eventos, combustible y tr&aacute;nsito.</div>
+          <div class="url">tablero-tnir.onrender.com</div>
+          <a class="btn" href="https://tablero-tnir.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+
+        <div class="card fng">
+          <div class="ico">&#128667;</div>
+          <h3>Fletera FNG</h3>
+          <div class="desc">Monitoreo de flota FNG por oficina: km, bases y alertas de combustible.</div>
+          <div class="url">tablero-fng.onrender.com</div>
+          <a class="btn" href="https://tablero-fng.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+
+        <div class="card cryo">
+          <div class="ico">&#10052;&#65039;</div>
+          <h3>Cryogenics</h3>
+          <div class="desc">Monitoreo de flota Cryogenics: millas, conductores HOS y operaci&oacute;n.</div>
+          <div class="url">tablero-samsara-1.onrender.com</div>
+          <a class="btn" href="https://tablero-samsara-1.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect">
+      <h2>Capital humano</h2>
+      <div class="grid">
+        <div class="card recl">
+          <div class="ico">&#129309;</div>
+          <h3>Reclutamiento</h3>
+          <div class="desc">Pipeline de candidatos, conductores activos, bajas y KPIs de reclutamiento.</div>
+          <div class="url">tablero-reclutamiento.onrender.com</div>
+          <a class="btn" href="https://tablero-reclutamiento.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Tablero Master &middot; Operaciones &mdash; accesos centralizados</footer>
+</body>
+</html>
