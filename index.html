@@ -8,7 +8,7 @@
   :root{
     --bg:#0b1220; --panel:#0f172a; --card:#ffffff; --txt:#0f172a;
     --muted:#64748b; --line:#e2e8f0;
-    --tnir:#2563eb; --fng:#0891b2; --cryo:#7c3aed; --recl:#16a34a; --mon:#0ea5e9; --rem:#f59e0b; --presu:#ca8a04; --ctpat:#dc2626; --mant:#0f766e;
+    --tnir:#2563eb; --fng:#0891b2; --cryo:#7c3aed; --recl:#16a34a; --mon:#0ea5e9; --rem:#f59e0b; --presu:#ca8a04; --ctpat:#dc2626; --mant:#0f766e; --seg:#e11d48; --acc:#0369a1;
   }
   *{box-sizing:border-box}
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -43,6 +43,8 @@
   .presu{border-top-color:var(--presu)} .presu .btn{background:var(--presu)}
   .ctpat{border-top-color:var(--ctpat)} .ctpat .btn{background:var(--ctpat)}
   .mant{border-top-color:var(--mant)} .mant .btn{background:var(--mant)}
+  .seg{border-top-color:var(--seg)} .seg .btn{background:var(--seg)}
+  .acc{border-top-color:var(--acc)} .acc .btn{background:var(--acc)}
   footer{text-align:center;color:#64748b;font-size:12.5px;padding:10px 20px 40px}
 </style>
 </head>
@@ -139,6 +141,26 @@
           <div class="desc">Control de mantenimiento de unidades TNIR y Cryogenics.</div>
           <div class="url">mantenimiento.fngusa.com</div>
           <a class="btn" href="https://mantenimiento.fngusa.com/login_mantenimiento.php" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+      </div>
+    </div>
+    <div class="sect">
+      <h2>Seguridad y accesos</h2>
+      <div class="grid">
+        <div class="card seg">
+          <div class="ico">&#128680;</div>
+          <h3>Seguridad de flota</h3>
+          <div class="desc">Eventos de seguridad de la flota TNIR y FNG a partir de Samsara.</div>
+          <div class="url">tablero-seguridad.onrender.com</div>
+          <a class="btn" href="https://tablero-seguridad.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
+        </div>
+
+        <div class="card acc">
+          <div class="ico">&#128682;</div>
+          <h3>Control de acceso patio</h3>
+          <div class="desc">Registro y control de entradas y salidas del patio.</div>
+          <div class="url">control-acceso-patio.onrender.com</div>
+          <a class="btn" href="https://control-acceso-patio.onrender.com/" target="_blank" rel="noopener">Abrir tablero</a>
         </div>
       </div>
     </div>
